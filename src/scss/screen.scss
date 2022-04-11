@@ -1,0 +1,13 @@
+.screen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 15%;
+  background-color: var(--screen-background);
+  border-radius: 10px;
+  padding: 0 5%;
+  color: var(--text-screen);
+  &__number {
+    font-size: 4rem;
+  }
+}

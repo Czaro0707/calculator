@@ -1,0 +1,10 @@
+.calculator {
+  background-color: var(--screen-toggle-background);
+  border-radius: 10px;
+  flex-basis: 70%;
+  display: grid;
+  grid-template-columns: repeat(4, 21.5%);
+  padding: 5%;
+  column-gap: 5%;
+  row-gap: 3%;
+}

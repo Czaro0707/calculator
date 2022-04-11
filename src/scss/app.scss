@@ -1,0 +1,61 @@
+@import "./variables.scss";
+@import "./themes.scss";
+@import "./screen.scss";
+@import "./calculator.scss";
+@import "./buttons.scss";
+
+:root {
+  --wrapper-background: #{$very-dark-blue-background};
+
+  --background-normal-button: #{$light-orange-background-key};
+  --text-normal-button: #{$very-dark-blue-text};
+  --box-shadow-normal-button: #{$dark-blue-shadow-key};
+  --text-normal-hover-button: #{$normal-hover-button};
+
+  --background-equal-button: #{$red-background-toggle-key};
+  --text-equal-button: #{$white-text};
+  --box-shadow-equal-button: #{$dark-red-shadow-key};
+
+  --background-del-reset-button: #{$dark-blue-background-key};
+  --text-del-reset-button: #{$white-text};
+  --box-shadow-del-reset-button: #{$dark-blue-shadow-key};
+
+  --screen-background: #{$very-dark-blue-screen-background};
+  --screen-toggle-background: #{$very-dark-blue-toggle-bakckground};
+
+  --text-screen: #{$text-screen-color};
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+.appWrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--wrapper-background);
+}
+
+.app {
+  min-width: 400px;
+  max-width: 560px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  height: 70vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: $font-family;
+  color: $white-text;
+  border-radius: 10px;
+}
